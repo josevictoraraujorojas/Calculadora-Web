@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <title>Calculadora</title>
+    <!-- Configurações básicas e importação do CSS. -->
+  </head>
+  <body>
+    <div id="calculator">
+      <!-- Container principal da calculadora. -->
+      <input type="text" id="display" readonly />
+      <!-- Campo de exibição (somente leitura). -->
+
+      <div id="buttons">
+        <!-- Botões agrupados em linhas. -->
+        <button class="button button-clear" data-clear="clear">C</button>
+        <button class="button button-parentheses" data-parentheses="()">
+          ( )
+        </button>
+        <button class="button button-operation" data-operation="/">÷</button>
+        <button class="button button-operation" data-operation="*">×</button>
+
+        <!-- Números e operações -->
+        <button class="button button-number" data-number="7">7</button>
+        <button class="button button-number" data-number="8">8</button>
+        <button class="button button-number" data-number="9">9</button>
+        <button class="button button-operation" data-operation="-">-</button>
+
+        <button class="button button-number" data-number="4">4</button>
+        <button class="button button-number" data-number="5">5</button>
+        <button class="button button-number" data-number="6">6</button>
+        <button class="button button-operation" data-operation="+">+</button>
+
+        <button class="button button-number" data-number="1">1</button>
+        <button class="button button-number" data-number="2">2</button>
+        <button class="button button-number" data-number="3">3</button>
+        <button class="button button-operation" data-operation="-">-</button>
+
+        <button class="button button-number button-zero" data-number="0">
+          0
+        </button>
+        <button class="button button-number" data-decimal=",">,</button>
+        <button class="button button-equal" data-equal="=">=</button>
+      </div>
+    </div>
+    <script src="javascript/calculadora.js"></script>
+    <!-- Importa o script JavaScript para funcionalidade da calculadora. -->
+  </body>
+</html>
